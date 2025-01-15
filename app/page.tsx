@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import OurSolutions from "./components/OurSoluctions";
 import SellPropertySteps from "./components/SellPropertySteps";
+import Testimonals from "./components/Testimonials";
 import WhyEcolisting from "./components/WhyEcolisting";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <SellPropertySteps></SellPropertySteps>
       <WhyEcolisting />
       <OurSolutions />
+      <Testimonals/>
       <DisoverHomeValue />
       <Footer />
     </>
