@@ -38,7 +38,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <title>Ecolisting</title>
+      <title>Eco-listing</title>
       <link
         rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap"
