@@ -1,53 +1,29 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
-/* eslint-disable @next/next/no-sync-scripts */
-/* eslint-disable react/jsx-no-comment-textnodes */
-/* eslint-disable @next/next/no-page-custom-font */
-
-'use client';
-
-import { Geist, Geist_Mono } from "next/font/google";
-import 'bootstrap/dist/css/bootstrap.css';
+import type { Metadata } from 'next';
+import { Fira_Sans } from "next/font/google";
 import "./globals.css";
-import 'bootstrap/dist/css/bootstrap.min.css'; // Load Bootstrap CSS
-import { useEffect } from "react";
+import ClientLayout from './components/ClientLayout';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const firaSans = Fira_Sans({
+  subsets: ['latin'], 
+  weight: ['400', '700'], 
+  style: ['normal', 'italic'],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-// export const metadata: Metadata = {
-//   title: "EcoListing",
-//   description: "EcoListing",
-// };
+export const metadata: Metadata = {
+  title: "EcoListing",
+  description: "Revolutionizing real estate with cutting-edge technology.",
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  
-  useEffect(() => {
-    require('bootstrap/dist/js/bootstrap.bundle.min.js');
-  }, []);
-
   return (
     <html lang="en">
-      <title>Eco-listing</title>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap"
-      />
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+            <body className={firaSans.className}>
+            <ClientLayout>{children}</ClientLayout>
+            </body>
     </html>
   );
 }
