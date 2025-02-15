@@ -26,7 +26,7 @@ export default function Testimonials() {
       <div className="container mx-auto max-w-screen-lg text-center">
         <h2 className="text-3xl text-gray-800">What our clients say</h2>
         <p className="text-gray-600 mt-4">
-          EcoListing has helped homeowners across the country save money, sell faster, and enjoy a stress-free selling experience. Here's why people trust us with their homes.
+         {`EcoListing has helped homeowners across the country save money, sell faster, and enjoy a stress-free selling experience. Here's why people trust us with their homes.`}
         </p>
 
         {/* Testimonials Grid */}

@@ -43,7 +43,7 @@ export default function DigitalTwin() {
     setTimeout(() => {
       setCurrentIndex(index);
       setFade(true);
-    }, 300);
+    }, 3000);
   };
 
   const handleNext = () => {
@@ -51,7 +51,7 @@ export default function DigitalTwin() {
     setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % digitalTwinData.length);
       setFade(true);
-    }, 300);
+    }, 3000);
   };
 
   const handlePrev = () => {
@@ -61,7 +61,7 @@ export default function DigitalTwin() {
         prevIndex === 0 ? digitalTwinData.length - 1 : prevIndex - 1
       );
       setFade(true);
-    }, 300);
+    }, 3000);
   };
 
   const togglePlayPause = () => {
@@ -135,7 +135,7 @@ export default function DigitalTwin() {
             <img
               src={digitalTwinData[currentIndex].image}
               alt={digitalTwinData[currentIndex].title}
-              className="rounded-lg shadow-lg w-full object-cover"
+              className={`rounded-lg shadow-lg w-full object-cover ${fade ? "fade-enter-active" : "fade-enter"}`}
             />
           </div>
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex items-center space-x-4 z-99">  

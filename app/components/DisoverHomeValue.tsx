@@ -3,7 +3,7 @@ export default function EvaluationSection() {
     <section className="relative bg-cover bg-center discover-section min-h-[600px]">
       <div className="absolute bottom-0 w-full h-1/2 bg-[#00151ECC] bg-opacity-50 flex items-center justify-center text-white">
       <div className="relative container mx-auto max-w-screen-lg pt-[4rem] pb-[4vh] text-center text-white">
-        <h2 className="text-4xl mb-4">Discover Your Home's True Value</h2>
+        <h2 className="text-4xl mb-4">{`Discover Your Home's True Value`}</h2>
         <p className="mb-8 text-lg">
           Our experts will send custom CMA report of your property using the latest data and deliver it to you within 24 hours!
         </p>

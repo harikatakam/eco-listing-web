@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 export default function Banner() {
   return (
     <div className="container mx-auto pt-2 px-6">
