@@ -20,7 +20,7 @@ const digitalTwinData = [
       "Explore modern kitchens with the latest appliances and design.",
       "Show buyers the functionality and elegance of your kitchen.",
     ],
-    image: "/images/DigitalTwin.png",
+    image: "/images/3dtour.jpg",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const digitalTwinData = [
       "Visualize a cozy bedroom setup with warm lighting and decor.",
       "Highlight the personal space and comfort of the property.",
     ],
-    image: "/images/DigitalTwin.png",
+    image: "/images/renovation.jpg",
   },
 ];
 
@@ -138,21 +138,20 @@ export default function DigitalTwin() {
               className={`rounded-lg shadow-lg w-full object-cover ${fade ? "fade-enter-active" : "fade-enter"}`}
             />
           </div>
-            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex items-center space-x-4 z-99">  
+            <div className="absolute bottom-[-3rem] left-1/2 transform -translate-x-1/2 flex items-center space-x-4 z-99">  
                  <Image onClick={handlePrev} className='cursor-pointer'
                         src="/images/chevron-double-left.png"
                         alt="Left arrow"
                         width={41}
                         height={41}
                       />              
-                {isPlaying ? "❚❚" : 
+                
                 <Image onClick={togglePlayPause} className='cursor-pointer'
-                        src="/images/play.png"
+                        src={isPlaying ? "/images/pause.svg" : "/images/play.svg"}
                         alt="Play"
-                        width={41}
-                        height={41}
-                      />}
-              
+                        width={30}
+                        height={30}
+                      />
                 <Image onClick={handleNext} className='cursor-pointer'
                         src="/images/chevron-double-right.png"
                         alt="Right arrow"
