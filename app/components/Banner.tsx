@@ -1,6 +1,6 @@
 export default function Banner() {
   return (
-    <div className="container mx-auto pt-2 px-6">
+    <div className="container mx-auto pt-4 px-6">
       <section className="relative hero-section bg-cover bg-center rounded-lg shadow-md">
       <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
         <div className="relative flex flex-col items-end text-center py-12 pr-12 shadow-md rounded-lg z-99">

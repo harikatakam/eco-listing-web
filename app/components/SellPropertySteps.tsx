@@ -40,25 +40,27 @@ const SellingSteps = () => {
         <h2 className="text-xl text-gray-600">SELLING MADE SIMPLE</h2>
         <h1 className="text-3xl font-semibold text-gray-800">4 Steps For Selling Your Property</h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 px-4 md:px-16">
-        {steps.map((step) => (
-          <div key={step.id} className="text-left relative">
-          <div className='relative'>
-              <img
-                src={step.image}
-                alt={step.title}
-                className="rounded-lg shadow-md w-[80%]"
-              />
-              <span
-                className={`absolute bottom-[-5rem] right-[-0.5rem] text-[8rem] opacity-50 ${step.textColor}`}
-              >
-                {step.id}
-              </span>
+      <div className="container mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 px-4 md:px-16">
+          {steps.map((step) => (
+            <div key={step.id} className="text-left relative">
+            <div className='relative'>
+                <img
+                  src={step.image}
+                  alt={step.title}
+                  className="rounded-lg shadow-md w-[70%]"
+                />
+                <span
+                  className={`absolute bottom-[-3rem] right-[1.8rem] text-[6rem] opacity-50 ${step.textColor}`}
+                >
+                  {step.id}
+                </span>
+              </div>
+              <h3 className="text-lg font-semibold mt-4 text-gray-700">{step.title}</h3>
+              <p className="text-sm text-gray-500 mt-2">{step.description}</p>
             </div>
-            <h3 className="text-lg font-semibold mt-4 text-gray-700">{step.title}</h3>
-            <p className="text-sm text-gray-500 mt-2">{step.description}</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
