@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Navigation from "./Navigation";
 
 export default function Header() {
   return (
@@ -13,15 +14,8 @@ export default function Header() {
         height={100}
       />
         </div>
-        <nav className="space-x-6 hidden md:flex">
-        <Link href="/" className="hover:text-primary">Home</Link>
-        <Link href="/about" className="hover:text-primary">About us</Link>
-        <Link href="/sellers-tool" className="hover:text-primary">Sellers Tool</Link>
-        <Link href="/sold-properties" className="hover:text-primary">Sold Properties</Link>
-        <Link href="/add-listing" className="hover:text-primary">Add Listing</Link>
-        <Link href="/enquiry" className="hover:text-primary">Enquiry</Link>
-        </nav>
-        <button className="bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark">Login</button>
+        <Navigation />
+        <Link href="/login" className="bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark">Login</Link>
       </div>
     </header>
   );

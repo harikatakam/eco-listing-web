@@ -41,6 +41,9 @@
 .discover-section{
   background-image: url('../public/images/discover.jpg');
 }
+.login-bg{
+  background-image: url('../public/images/hero2.jpg');
+}
 .text-gold {
   color: #B5A239;
 }

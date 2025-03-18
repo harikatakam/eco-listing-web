@@ -13,7 +13,7 @@ export default function ClientLayout({ children }:ClientLayoutProps) {
     return (
         <>
           {!isHomepage && <Header />} {/* Render Header unless it's the homepage */}
-          <main className={isHomepage ? '' : 'container mx-auto py-8'}>
+          <main className={isHomepage ? '' : 'container mx-auto'}>
             {children}
           </main>
           {!isHomepage && <Footer />} {/* Render Footer unless it's the homepage */}
